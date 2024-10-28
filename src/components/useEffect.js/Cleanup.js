@@ -11,6 +11,7 @@ class Cleanup extends Component {
     }
 
     componentDidMount() {
+        
         window.addEventListener('mousemove', this.handleMouseMove);
     }
 
@@ -19,6 +20,7 @@ class Cleanup extends Component {
     }
 
     handleMouseMove = (event) => {
+        console.log("Hello tracking this ")
         if (this.state.tracking) {
             this.setState({
                 mouseX: event.clientX,
